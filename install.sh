@@ -1,5 +1,4 @@
 sudo pacman -Sy --noconfirm git > /dev/null 2>&1
-bash git/setup.sh
 
 mkdir -p ~/Desktop/GitHub/Packages
 git clone https://github.com/braindotai/braindotdev.git ~/Desktop/GitHub/braindotdev
