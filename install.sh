@@ -7,7 +7,6 @@ cd ~/Desktop/GitHub/braindotdev
 bash git/setup.sh
 bash cli/setup.sh
 bash docker/setup.sh
-# no setup for exports
 bash flathub/setup.sh
 bash fonts/setup.sh
 bash kitty/setup.sh

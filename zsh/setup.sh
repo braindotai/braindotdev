@@ -55,5 +55,6 @@ fi
 ########## STOW SETUP ##########
 ORIGINAL_DIR=$(pwd)
 cd ~/Desktop/GitHub/braindotdev/zsh/config
+rm -rf ~/.zshrc ~/.p10k.zsh
 stow -vt ~/ .
 cd "$ORIGINAL_DIR"

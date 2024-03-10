@@ -6,8 +6,8 @@ command_exists() {
 
 if ! command_exists docker; then
     echo "🐳 Installing docker  🐳"
-    paru -Sy --noconfirm docker
-    paru -Sy --noconfirm docker-compose
+    paru -Sy --noconfirm docker > /dev/null 2>&1
+    paru -Sy --noconfirm docker-compose > /dev/null 2>&1
     # sudo cp ~/Desktop/GitHub/braindotdev/docker/config/daemon.json /etc/docker/daemon.json
     # https://docs.docker.com/reference/cli/dockerd/#daemon-configuration-file
 fi
