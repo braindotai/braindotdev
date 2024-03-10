@@ -6,7 +6,7 @@ command_exists() {
 
 if ! command_exists paru; then
     echo "🖥️  Installing cli utilities 🖥️"
-
+    
     ORIGINAL_DIR=$(pwd)
     rm -rf ~/Desktop/GitHub/Packages/paru
     cd ~/Desktop/GitHub/Packages
