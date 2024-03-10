@@ -1,6 +1,6 @@
 echo "🛒 Installing flathub 🛒"
 
-sudo pacman -Sy --noconfirm flatpak
+paru -Sy --noconfirm flatpak
 
 flatpak install -y com.github.finefindus.eyedropper
 flatpak install -y com.github.huluti.Curtail

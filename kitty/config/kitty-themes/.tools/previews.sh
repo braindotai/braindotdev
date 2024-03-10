@@ -1,7 +1,7 @@
 #!/bin/bash
 # @author: @vrdhn on github
 
-SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}"  )" >/dev/null 2>&1 && pwd  )"
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}"  )"  && pwd  )"
 cd $SCRIPT_DIR/..
 
 set_theme () {

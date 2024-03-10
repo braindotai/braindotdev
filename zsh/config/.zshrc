@@ -93,15 +93,12 @@ plugins=(
   zsh-autosuggestions
 )
 
-# Set the config directory path
-config_dir="~/Desktop/braindotdev/aliases/config"
-# Loop through all .sh files in the config directory
-for file in "$config_dir"/*.sh
-do
-    source "$file"
-done
+source ~/Desktop/GitHub/braindotdev/aliases/config/kitty.sh
+source ~/Desktop/GitHub/braindotdev/aliases/config/python.sh
+source ~/Desktop/GitHub/braindotdev/aliases/config/system.sh
+source ~/Desktop/GitHub/braindotdev/aliases/config/yt-dlp.sh
 
-source ~/Desktop/braindotdev/exports/config/exports.sh
+source ~/Desktop/GitHub/braindotdev/exports/config/exports.sh
 
 source $ZSH/oh-my-zsh.sh
 
