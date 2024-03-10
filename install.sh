@@ -10,8 +10,8 @@ bash cli/setup.sh
 bash docker/setup.sh
 bash flathub/setup.sh
 bash fonts/setup.sh
-bash kitty/setup.sh
 bash pacman/setup.sh
 bash python/setup.sh
 bash vscode/setup.sh
+bash kitty/setup.sh
 bash zsh/setup.sh
