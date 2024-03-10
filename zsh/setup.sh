@@ -18,14 +18,14 @@ if ! command_exists zsh; then
     sudo chsh -s "$(command -v zsh)" "$USER"
 fi
 
+# Backup existing files beforeinstalling Powerlevel10k themernd plugins
+backup_existing_files "$HOME/.zshrc" "$HOME/.p10k.zsh" "$HOME/.config/kitty"
+
 # Install Oh My Zsh if not installed
 if [ ! -d "$HOME/.oh-my-zsh" ]; then
     echo "🫨 Installing oh my zsh 🫨"
     wget -qO - https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh | zsh -s
 fi
-
-# Backup existing files beforeinstalling Powerlevel10k themernd plugins
-backup_existing_files "$HOME/.zshrc" "$HOME/.p10k.zsh" "$HOME/.config/kitty"
 
 # Install Powerlevel10k theme if not installed
 if [ ! -d "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k" ]; then

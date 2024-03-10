@@ -1,7 +1,11 @@
-########## Install paru ##########
-echo "🖥️  Installing cli utilities 🖥️"
+command_exists() {
+    command -v "$1" 
+}
 
-if ! command_exists kitty; then
+########## Install paru ##########
+
+if ! command_exists paru; then
+    echo "🖥️  Installing cli utilities 🖥️"
     sudo pacman -Sy --needed --noconfirm base-devel
 
     ORIGINAL_DIR=$(pwd)
