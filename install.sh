@@ -1,4 +1,3 @@
-mkdir -p ~/Desktop/GitHub/
 mkdir -p ~/Desktop/GitHub/Packages
 
 git clone https://github.com/braindotai/braindotdev ~/Desktop/GitHub/braindotdev > /dev/null 2>&1
