@@ -1,0 +1,7 @@
+[init]
+	defaultBranch = main
+[user]
+	name = Rishik Mourya
+	email = braindotai@gmail.com
+[core]
+    editor = subl

@@ -1,0 +1,1 @@
+sudo paru -Sy --noconfirm visual-studio-code-bin

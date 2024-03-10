@@ -1,0 +1,1 @@
+sudo paru -Sy --noconfirm python39

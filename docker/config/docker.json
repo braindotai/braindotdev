@@ -1,0 +1,4 @@
+{
+    "max-concurrent-uploads": 20,
+    "max-concurrent-downloads": 20
+}
