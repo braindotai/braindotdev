@@ -14,5 +14,5 @@ fi
 ORIGINAL_DIR=$(pwd)
 sudo mkdir -p ~/.config/kitty
 cd $HOME/Desktop/GitHub/braindotdev/kitty/config/
-sudo stow -vt ~/.config/kitty/ .
+sudo stow -vt ~/.config/kitty/ . > /dev/null 2>&1
 cd "$ORIGINAL_DIR"

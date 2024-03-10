@@ -19,7 +19,7 @@ if ! command_exists zsh; then
 fi
 
 # Backup existing files beforeinstalling Powerlevel10k themernd plugins
-backup_existing_files "$HOME/.zshrc" "$HOME/.p10k.zsh" "$HOME/.config/kitty"
+backup_existing_files "$HOME/.zshrc" "$HOME/.p10k.zsh"
 
 # Install Oh My Zsh if not installed
 if [ ! -d "$HOME/.oh-my-zsh" ]; then
