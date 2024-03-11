@@ -1,11 +1,32 @@
 echo "🚀 Initializing braindotdev 🚀"
+
+echo "🐼 Configuring git 🐼"
+echo "@@@@@@@@@@@#+-:..    ..:-+#@@@@@@@@@@@
+@@@@@@@%+-.                .-+%@@@@@@@
+@@@@@#-     ...        ...     -#@@@@@
+@@@%-    ::.              .::    -%@@@
+@@*   . =@@@#=-==++++==-=#@@@= .   *@@
+@*    . =@@@@@@@@@@@@@@@@@@@@+ .    *@
+%       *@@@@@@@@@@@@@@@@@@@@*       %
+-      *@@@@@@@@@@@@@@@@@@@@@@*      -
+.     .@@@@@@@@@@@@@@@@@@@@@@@@:     .
+      .@@@@@@@@@@@@@@@@@@@@@@@@.      
+:    . *@@@@@@@@@@@@@@@@@@@@@@*      :
+* .     *@@@@@@@@@@@@@@@@@@@@*     . +
+@- . ::  :+%@@@@@@@@@@@@@@#+:     . -@
+@@-  -*#-   ..-@@@@@@@@-:.         :@@
+@@@=   =@*-:::*@@@@@@@@*          =@@@
+@@@@#-  :*%%%%@@@@@@@@@#        -#@@@@
+@@@@@@%=.   . #@@@@@@@@#     :=%@@@@@@
+@@@@@@@@@#+-. #@@@@@@@@# .-+#@@@@@@@@@"
+
 sudo pacman -Sy --noconfirm git > /dev/null 2>&1
+git config --global core.excludesfile ~/Desktop/GitHub/braindotdev/git/config/.gitignore
 
 mkdir -p ~/Desktop/GitHub/Packages
 git clone https://github.com/braindotai/braindotdev.git ~/Desktop/GitHub/braindotdev > /dev/null 2>&1
 cd ~/Desktop/GitHub/braindotdev
 
-bash git/setup.sh
 bash cli/setup.sh
 bash docker/setup.sh
 bash flathub/setup.sh
