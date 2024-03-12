@@ -5,3 +5,4 @@
 	email = braindotai@gmail.com
 [core]
     editor = subl
+	excludesfile = ~/.gitignore

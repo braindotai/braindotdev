@@ -11,7 +11,7 @@ if ! command_exists paru; then
     cd ~/Desktop/GitHub/Packages
     git clone https://aur.archlinux.org/paru.git  > /dev/null 2>&1
     cd paru
-    makepkg -si --noconfirm > /dev/null
+    makepkg -si --noconfirm > /dev/null2 2>&1
     cd "$ORIGINAL_DIR"
 fi
 
