@@ -4,30 +4,14 @@ command_exists() {
     command -v "$1" 
 }
 
+echo -e "🐳 Configuring docker  🐳"
 ########## DOCKER SETUP ##########
-echo "                             ::  
-                            :*+.      
-               ..:-.:::     -**:.-=++-
-            =*****#---:      +*=***+- 
-            =+====-.::.      .***=:   
-        -++*+***=:-.--::-:   .*=.     
-        :++++***=:-.:-::-: .-**.      
- =++++++=====----:-:----==+****.      
-:******************************.      
-:******************************.      
-.*************+##..+***********       
- +************=@%  :**********=       
- :++*****++++*++#*=+*********+        
-  +*+++++**#%#**++**********+.        
-  .#@@%%@@@@@%************+-          
-    =#@@@%%%%%#*********+-            
-      -+#%%%@@@%#**++=:.              
-         .:-=====:.                   "
 
 if ! command_exists docker; then
-    echo "🐳 Configuring docker  🐳"
     paru -Sy --noconfirm docker > /dev/null 2>&1
+    echo -e "   🐳 Configuring docker compose  🐳"
     paru -Sy --noconfirm docker-compose > /dev/null 2>&1
+    echo -e "   🐳 Configuring nvidia container toolkit  🐳"
     # sudo cp ~/Desktop/GitHub/braindotdev/docker/config/daemon.json /etc/docker/daemon.json
     # https://docs.docker.com/reference/cli/dockerd/#daemon-configuration-file
 fi
@@ -36,5 +20,5 @@ fi
 ORIGINAL_DIR=$(pwd)
 sudo mkdir -p /etc/docker/
 cd ~/Desktop/GitHub/braindotdev/docker/config/
-sudo stow -vt /etc/docker/ .
+sudo stow -vt /etc/docker/ . > /dev/null 2>&1
 cd "$ORIGINAL_DIR"

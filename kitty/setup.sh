@@ -4,26 +4,8 @@ command_exists() {
     command -v "$1" 
 }
 
-echo "🐈 Configuring kitty 🐈"
-echo "                                      
-                                      
-       :---::.:::----:::.::---:       
-        :----::::----::::----:        
-         :--:=+*+----+*+=:--:         
-         .::=@%%@*::*@%%@=::.         
-      ..::::-*###=--=###*-::::..      
-    ::::::::......::......:::::::.    
-      ....                  ....      
-            :=                        
-            .+#=                      
-               +%-                    
-              =*=.                    
-            -#=.   =======            
-                   .......            
-                                      
+echo -e "🐈 Configuring kitty 🐈"
 
-                                      "
-                                      
 # Install Kitty terminal if not installed
 if ! command_exists kitty; then
     paru -Sy --noconfirm kitty . > /dev/null 2>&1

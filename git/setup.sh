@@ -1,1 +1,0 @@
-# GIT_CONFIG is exported inside exports
