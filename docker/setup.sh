@@ -9,9 +9,9 @@ echo -e "🐳 Configuring docker  🐳"
 
 if ! command_exists docker; then
     paru -Sy --noconfirm docker > /dev/null 2>&1
-    echo -e "   🐳 Configuring docker compose  🐳"
+    echo -e "🐳 Configuring docker compose  🐳"
     paru -Sy --noconfirm docker-compose > /dev/null 2>&1
-    echo -e "   🐳 Configuring nvidia container toolkit  🐳"
+    echo -e "🐳 Configuring nvidia container toolkit  🐳"
     # sudo cp ~/Desktop/GitHub/braindotdev/docker/config/daemon.json /etc/docker/daemon.json
     # https://docs.docker.com/reference/cli/dockerd/#daemon-configuration-file
 fi
