@@ -58,3 +58,6 @@ fi
 if ! command_exists sh.cider.Cider; then
     flatpak install -y sh.cider.Cider > /dev/null 2>&1
 fi
+if ! command_exists io.missioncenter.MissionCenter; then
+    flatpak run io.missioncenter.MissionCenter > /dev/null 2>&1
+fi
