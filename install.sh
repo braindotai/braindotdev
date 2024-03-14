@@ -2,9 +2,9 @@ echo "🚀 Initializing braindotdev 🚀"
 
 echo "🐼 Configuring git 🐼"
 
-sudo pacman -Sy --noconfirm git > /dev/null 2>&1
+sudo pacman -Sy --noconfirm git
 mkdir -p ~/Desktop/GitHub/Packages
-git clone https://github.com/braindotai/braindotdev.git ~/Desktop/GitHub/braindotdev > /dev/null 2>&1
+git clone https://github.com/braindotai/braindotdev.git ~/Desktop/GitHub/braindotdev
 cd ~/Desktop/GitHub/braindotdev
 
 bash cli/setup.sh

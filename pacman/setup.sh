@@ -5,5 +5,5 @@ echo -e "📦 Configuring pacman 📦"
 ORIGINAL_DIR=$(pwd)
 cd ~/Desktop/GitHub/braindotdev/pacman/config
 sudo rm -rf /etc/pacman.conf
-sudo stow -vt /etc/ . > /dev/null 2>&1
+sudo stow -vt /etc/ .
 cd "$ORIGINAL_DIR"
