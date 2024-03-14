@@ -19,46 +19,46 @@ echo -e "💻 Configuring zsh 💻"
 backup_existing_files "$HOME/.zshrc" "$HOME/.p10k.zsh"
 
 if ! command_exists zsh; then
-    paru -Sy --noconfirm zsh
-    sudo chsh -s "$(command -v zsh)" "$USER"
+    paru -Sy --noconfirm zsh > /dev/null 2>&1
+    sudo chsh -s "$(command -v zsh)" "$USER" > /dev/null 2>&1
 fi
 
 # Install Oh My Zsh if not installed
 if [ ! -d "$HOME/.oh-my-zsh" ]; then
     echo "🫨 Configuring oh my zsh 🫨"
-    wget -qO - https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh | zsh -s
+    wget -qO - https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh | zsh -s > /dev/null 2>&1
 fi
 
 # Install Powerlevel10k theme if not installed
 if [ ! -d "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k" ]; then
     echo "🔌 Configuring powerlevel10k 🔌"
-    git clone --depth=1 https://github.com/romkatv/powerlevel10k.git "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k"
+    git clone --depth=1 https://github.com/romkatv/powerlevel10k.git "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k" > /dev/null 2>&1
 fi
 
 # Install zsh-autosuggestions if not installed
 if [ ! -d "${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions" ]; then
     echo "✏️  Configuring zsh autosuggestions ✏️"
-    git clone https://github.com/zsh-users/zsh-autosuggestions "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-autosuggestions"
+    git clone https://github.com/zsh-users/zsh-autosuggestions "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-autosuggestions" > /dev/null 2>&1
 fi
 
 # Install zsh-syntax-highlighting if not installed
 if [ ! -d "${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting" ]; then
     echo "🌈 Configuring zsh syntax highlighting 🌈"
-    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting"
+    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting" > /dev/null 2>&1
 fi
 
 # Install zsh-autocomplete if not installed
 if [ ! -d "${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autocomplete" ]; then
     echo "✍  Configuring zsh autocomplete ✍"
-    git clone https://github.com/marlonrichert/zsh-autocomplete.git "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-autocomplete"
+    git clone https://github.com/marlonrichert/zsh-autocomplete.git "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-autocomplete" > /dev/null 2>&1
 fi
 
-sudo mkdir $ZSH_CUSTOM/plugins/poetry
+sudo mkdir -p $ZSH_CUSTOM/plugins/poetry
 poetry completions zsh > $ZSH_CUSTOM/plugins/poetry/_poetry
 
 ########## STOW SETUP ##########
 ORIGINAL_DIR=$(pwd)
 cd ~/Desktop/GitHub/braindotdev/zsh/config
 rm -rf ~/.zshrc ~/.p10k.zsh
-stow -vt ~/ .
+stow -vt ~/ . > /dev/null 2>&1
 cd "$ORIGINAL_DIR"
