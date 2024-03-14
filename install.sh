@@ -1,4 +1,4 @@
-echo "🚀 Initializing braindotdev 🚀"
+echo -e "\n🚀 ========== Initializing braindotdev ========== 🚀"
 
 echo "🐼 Configuring git 🐼"
 
@@ -18,4 +18,4 @@ bash vscode/setup.sh
 bash zsh/setup.sh
 bash kitty/setup.sh
 
-echo 
+echo -e "\n💪🏻 ========== Welcome to the Braindotai ========= 🦾"
