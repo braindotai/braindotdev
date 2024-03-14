@@ -9,9 +9,9 @@ if ! command_exists paru; then
     ORIGINAL_DIR=$(pwd)
     rm -rf ~/Desktop/GitHub/Packages/paru
     cd ~/Desktop/GitHub/Packages
-    git clone https://aur.archlinux.org/paru.git 
+    git clone https://aur.archlinux.org/paru.git > /dev/null 2>&1
     cd paru
-    makepkg -si --noconfirm
+    makepkg -si --noconfirm > /dev/null 2>&1
     cd "$ORIGINAL_DIR"
 fi
 

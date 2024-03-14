@@ -20,5 +20,5 @@ fi
 ORIGINAL_DIR=$(pwd)
 sudo mkdir -p /etc/docker/
 cd ~/Desktop/GitHub/braindotdev/docker/config/
-sudo stow -vt /etc/docker/ .
+sudo stow -vt /etc/docker/ . > /dev/null 2>&1
 cd "$ORIGINAL_DIR"
