@@ -99,6 +99,7 @@ source ~/Desktop/GitHub/braindotdev/aliases/config/system.sh
 source ~/Desktop/GitHub/braindotdev/aliases/config/yt-dlp.sh
 
 source ~/Desktop/GitHub/braindotdev/exports/config/exports.sh
+source /usr/share/autojump/autojump.zsh
 
 source $ZSH/oh-my-zsh.sh
 

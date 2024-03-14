@@ -5,3 +5,4 @@ stow -vt ~/ . > /dev/null 2>&1
 cd "$ORIGINAL_DIR"
 
 git config --global core.excludesfile ~/.gitignore
+# git config --global core.excludesfile ~/Desktop/GitHub/braindotdev/git/config/.gitignore

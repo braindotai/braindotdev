@@ -53,7 +53,7 @@ if [ ! -d "${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autocomplete" ]; then
     git clone https://github.com/marlonrichert/zsh-autocomplete.git "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-autocomplete" > /dev/null 2>&1
 fi
 
-mkdir $ZSH_CUSTOM/plugins/poetry
+sudo mkdir $ZSH_CUSTOM/plugins/poetry
 poetry completions zsh > $ZSH_CUSTOM/plugins/poetry/_poetry > /dev/null 2>&1
 
 ########## STOW SETUP ##########

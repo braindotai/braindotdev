@@ -46,9 +46,12 @@ fi
 if ! command_exists yt-dlp; then
     paru -Sy --noconfirm yt-dlp > /dev/null 2>&1
 fi
-if ! command_exists toipe; then
-    paru -Sy --noconfirm toipe > /dev/null 2>&1
-fi
 if ! command_exists btop; then
     paru -Sy --noconfirm btop > /dev/null 2>&1
+fi
+if ! command_exists autojump; then
+    paru -Sy --noconfirm autojump > /dev/null 2>&1
+fi
+if ! command_exists rmtrash; then
+    paru -Sy --noconfirm rmtrash > /dev/null 2>&1
 fi
