@@ -26,4 +26,4 @@ bash vscode/setup.sh
 bash zsh/setup.sh
 bash kitty/setup.sh
 
-echo -e "\n💪🏻 ========== Welcome to the Braindotai ========= 🦾"
+echo -e "\n💪🏻 ============ Welcome to the Braindotai =========== 🦾"
